@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import HeaderC from '../components/site-layout/Header';
 import SideMenuC from '../components/site-layout/SideMenu';
-import SMConfig from '../config/sideMenuConfig';
 
 class WebContainer extends React.Component {
   constructor(props) {
@@ -28,7 +27,7 @@ class WebContainer extends React.Component {
     return (
       <div className={`web-container ${menuOpen ? 'menu-open' : 'menu-closed'}`}>
         <HeaderC location={location} toggleMenu={this.toggleMenu} />
-        <SideMenuC location={location} items={SMConfig} />
+        <SideMenuC location={location} />
         <div>[ Router or content here ]</div>
       </div>
     );

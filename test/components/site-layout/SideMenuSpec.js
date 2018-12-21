@@ -12,5 +12,11 @@ describe('COMPONENT: Site Layout > Side Menu', () => {
 
       expect(component.html()).not.toBeNull();
     });
+
+    it('does not say hello world', () => {
+      const component = mount(<SideMenu />);
+
+      expect(component.text()).not.toEqual('Hello World!');
+    });
   });
 });
