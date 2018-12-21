@@ -1,7 +1,5 @@
 const defaultState = {
   uid: '',
-  errorMessage: '',
-  priorityProvider: '',
 };
 
 export default (state = defaultState, action) => {
