@@ -2,7 +2,6 @@ import 'normalize.css/normalize.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import { Router, Route } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import configureStore from './store/configureStore';
@@ -12,18 +11,11 @@ import WebContainer from './containers/WebContainer';
 
 const store = configureStore();
 const history = createHistory();
-const muiTheme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
-});
 const jsx = (
   <Provider store={store}>
-    <MuiThemeProvider theme={muiTheme}>
-      <Router history={history}>
-        <Route path="/" component={WebContainer} />
-      </Router>
-    </MuiThemeProvider>
+    <Router history={history}>
+      <Route path="/" component={WebContainer} />
+    </Router>
   </Provider>
 );
 let hasRendered = false;

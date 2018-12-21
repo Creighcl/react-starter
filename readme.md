@@ -6,22 +6,6 @@
 - gulp
 - eslint
 - karma-cli , 
-- firebase-cli
-
-**Config Files (not provided)**
-
-For Firebase configuration help, see the docs: https://firebase.google.com/docs/
-
-`.env.development` and `.env.test` files should contain key/val pairs
-
-```
-FIREBASE_API_KEY=Something
-FIREBASE_AUTH_DOMAIN=Something
-FIREBASE_DATABASE_URL=Something
-FIREBASE_PROJECT_ID=Something
-FIREBASE_STORAGE_BUCKET=Something
-FIREBASE_MESSAGING_SENDER_ID=Something
-```
 
 ## Unit Testing
 Through Jasmine/Karma/Enzyme in test folder: **/*Spec.js
